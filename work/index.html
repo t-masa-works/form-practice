@@ -1,14 +1,296 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormPractice</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FormPractice</title>
-</head>
+    <link rel="stylesheet" href="./css/css/reset.css" />
+    <link rel="stylesheet" href="./css/css/base.css" />
+    <link rel="stylesheet" href="./css/css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <section class="container">
+      <div class="inner">
+        <h1 class="title">フォーム作成</h1>
+        <div class="contact-form">
+          <form action="post">
+            <h2 class="form-title">アカウント作成</h2>
+            <div class="personal-date">
+              <h3 class="content-title">個人情報</h3>
+              <div class="input-item">
+                <div class="input-head">
+                  <label for="family_name" class="label-text"
+                    >名字<span class="required">※</span>
+                  </label>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="text"
+                    id="first_name"
+                    class="input-area"
+                    name="name"
+                    required
+                    autocomplete="on"
+                  />
+                </div>
+              </div>
+              <div class="input-item">
+                <div class="input-head">
+                  <label for="last_name" class="label-text"
+                    >名前<span class="required">※</span>
+                  </label>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="text"
+                    id="last_name"
+                    class="input-area"
+                    name="name"
+                    required
+                    autocomplete="on"
+                  />
+                </div>
+              </div>
+              <div class="input-item">
+                <div class="input-head">
+                  <label for="birthday" class="label-text"
+                    >生年月日<span class="required">※</span>
+                  </label>
+                </div>
+                <div class="input-field select-items">
+                  <select class="input-area" name="year" required>
+                    <option disabled selected>年</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                  </select>
+                  <select class="input-area" name="month" required>
+                    <option disabled selected>月</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                  <select class="input-area" name="day" required>
+                    <option disabled selected>日</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-item">
+                <div class="input-head">
+                  <p class="label-text">性別<span class="required">※</span></p>
+                </div>
+                <div class="radio-fields">
+                  <label for="man" class="radio-field"
+                    ><input
+                      type="radio"
+                      id="man"
+                      name="gender"
+                      class="radio-btn"
+                      required
+                    /><span class="radio-text">男性</span></label
+                  >
+                  <label for="woman" class="radio-field"
+                    ><input
+                      type="radio"
+                      id="woman"
+                      name="gender"
+                      class="radio-btn"
+                      required
+                    /><span class="radio-text">女性</span></label
+                  >
+                  <label for="others" class="radio-field"
+                    ><input
+                      type="radio"
+                      id="others"
+                      name="gender"
+                      class="radio-btn"
+                      required
+                    /><span class="radio-text">その他</span></label
+                  >
+                </div>
+              </div>
+              <div class="input-item">
+                <div class="input-head">
+                  <label for="work" class="label-text">職業 </label>
+                </div>
+                <div class="input-field select-work">
+                  <select class="input-area" name="work" id="work">
+                    <option value="" disabled selected>選択してください</option>
+                    <option value="学生">学生</option>
+                    <option value="会社員">会社員</option>
+                    <option value="主婦">主婦</option>
+                    <option value="その他">その他</option>
+                  </select>
+                </div>
+              </div>
+            </div>
 
-</body>
+            <div class="account-date">
+              <h3 class="content-title">アカウント情報</h3>
+              <div class="input-item">
+                <div class="input-head">
+                  <label for="account_name" class="label-text"
+                    >アカウント名<span class="required">※</span>
+                  </label>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="text"
+                    id="account_name"
+                    class="input-area"
+                    name="account-name"
+                    required
+                    autocomplete="on"
+                  />
+                </div>
+              </div>
+              <div class="input-item">
+                <div class="input-head">
+                  <label for="email" class="label-text"
+                    >メールアドレス<span class="required">※</span>
+                  </label>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="email"
+                    id="email"
+                    class="input-area"
+                    name="email"
+                    required
+                    autocomplete="on"
+                  />
+                </div>
+              </div>
+              <div class="input-item">
+                <div class="input-head">
+                  <label for="password" class="label-text"
+                    >パスワード<span class="required">※</span>
+                  </label>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="password"
+                    id="password"
+                    class="input-area"
+                    required
+                    autocomplete="on"
+                  />
+                </div>
+              </div>
+              <div class="input-item">
+                <div class="input-head">
+                  <label for="duplication_password" class="label-text"
+                    >確認用パスワード<span class="required">※</span>
+                  </label>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="duplication_password"
+                    id="duplication_password"
+                    class="input-area"
+                    required
+                    autocomplete="on"
+                  />
+                </div>
+              </div>
+            </div>
 
+            <div class="address-data">
+              <h3 class="content-title">連絡先</h3>
+              <div class="input-item">
+                <div class="input-head">
+                  <label for="addres" class="label-text"
+                    >住所<span class="required">※</span>
+                  </label>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="text"
+                    id="address"
+                    class="input-area"
+                    required
+                    autocomplete="on"
+                  />
+                </div>
+              </div>
+              <div class="input-item">
+                <div class="input-head">
+                  <label for="tel" class="label-text"
+                    >電話番号<span class="required">※</span>
+                  </label>
+                </div>
+                <div class="input-field">
+                  <input
+                    type="text"
+                    id="tel"
+                    class="input-area"
+                    required
+                    autocomplete="on"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="infomation">
+              <h3 class="content-title">購読情報</h3>
+              <div class="check-content">
+                <label for="magazine" class="label-text info-content"
+                  ><input type="checkbox" id="magazine" class="checkitem" /><span class="info-text"
+                    >メールマガジン</span
+                  ></label
+                >
+              </div>
+              <div class="check-content">
+                <label for="coupon" class="label-text info-content"
+                  ><input type="checkbox" id="coupon" class="checkitem" /><span class="info-text"
+                    >クーポン</span
+                  ></label
+                >
+              </div>
+            </div>
+
+            <div class="submit-area">
+              <button class="submit-button">アカウント作成</button>
+            </div>
+
+            <div class="policy">
+              <p class="policy-text">
+                アカウントを作成することにより、<a href="#" class="link">利用規約</a>と
+                <a href="#" class="link">プライバシーポリシー</a>に同意するものとします。
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
